@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'UTM Due';
+            src: url('font/UTM\ Duepuntozero.ttf');
+        }
+        @font-face {
+            font-family: 'UTM Due Bold';
+            src: url('font/UTM\ DuepuntozeroBold.ttf');
+        }
+    </style>
+</head>
+<body>
+    <h3>#1. GIới thiệu về các thẻ mới của html5</h3>
+    <p>Sử dụng để các search engine hiểu và tốt cho SEO</p>
+    <ul>
+        <li>Thẻ header | đánh dấu khu vực header của website</li>
+        <li>Thẻ nav | đánh dấu khu vực menu điều hướng</li>
+        <li>Thẻ section | đánh dấu khu vực tính năng website</li>
+        <li>Thẻ article | đánh dấu khu vực bài viết</li>
+        <li>Thẻ footer | đánh dấu khu vực footer của webs</li>
+        <li>Thẻ figure | đánh dấu khu vực thumbnail bài viết, sản phẩm </li>
+    </ul>
+    <hr>
+    <h3>#2. Giới thiệu các lệnh css3 mới hay sử dụng</h3>
+    <h4>2.1 Nhúng font chữ mới</h4>
+    <p>Sử dụng @font-face</p>
+    <ul>
+        <li style="font-family: 'UTM Due';">Sử dụng font chữ 1</li>
+        <li style="font-family: 'UTM Due Bold';">Sử dụng font chữ 2</li>
+    </ul>
+    <h4>2.2 Sử dụng display: flex</h4>
+    <div>
+        <p>2.2.1 Khai vào vài div làm demo</p>
+        <div style="background-color: grey;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange;">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+        <p>2.2.2 Sử dụng display: flex</p>
+        <div style="background-color: grey; display: flex;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange; ">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+        <p>2.2.3 Sử dụng display: flex và align-items (căn chỉnh thành phần 
+            theo chiều trên dưới: start, end, center, stretch) </p>
+        <div style="background-color: grey; display: flex; align-items: center;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange; ">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+        <p>2.2.4 Sử dụng display: flex và justify-content(căn chỉnh thành phần
+             con theo chiều trái phải: start, end, center,space-between, space-around, space-evenly) </p>
+        <div style="background-color: grey; display: flex; justify-content: space-evenly;">
+            <div style="background-color: red;">
+                <div>Box 1.1</div>
+            </div>
+            <div style="background-color: green;">
+                <div>Box 2.1</div>
+                <div>Box 2.2</div>
+            </div>
+            <div style="background-color: orange; ">
+                <div>Box 3.1</div>
+                <div>Box 3.2</div>
+                <div>Box 3.3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

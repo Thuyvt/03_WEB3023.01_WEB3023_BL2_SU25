@@ -1,0 +1,85 @@
+/* 1. RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 2. Cấu hình font chữ */
+@font-face {
+    font-family: 'UTM Due';
+    src: url('font/UTM\ Duepuntozero.ttf');
+}
+@font-face {
+    font-family: 'UTM Due Bold';
+    src: url('font/UTM\ DuepuntozeroBold.ttf');
+}
+body {
+    font-family: 'UTM Due';
+    font-size: 14px;
+}
+/* 3. Cấu hình chiều rộng web */
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+/* 4. Cấu hình các thành phần nội dung của web */
+/* 4.1 Cấu hình header */
+header {
+    /* Cấu hình logo */
+    .logo-box {
+        height: 100px;
+        width: 100%;
+        background-color: #F95412;
+        padding-left: 27px;
+        display: flex;
+        align-items: center;
+    }
+    /* Cấu hình nav */
+    .menu-box {
+        height: 37px;
+        background-color: #272F54;
+        display: flex;
+        /* Căn giữa theo chiều trên dưới */
+        align-items: center;
+        /* Phần tử đầu sang trái, cần tử cuối sang phải */
+        justify-content: space-between;
+        padding: 0 27px;
+
+        .menu-left {
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+            li.active {
+                background-color: #F95412;
+            }
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                padding: 0 20px;
+                height: 37px;
+            }
+        }
+        .menu-right {
+            input {
+                padding: 0px 5px;
+                height: 20px;
+                border: 1px solid gray;
+                width: 250px;
+                margin-right: 10px;
+
+                /* Hiệu ứng, chọn vào ô input */
+                &:focus {
+                    background-color: #F95412;
+                }
+            }
+            button {
+                color: #FFFFFF;
+                background-color: #272F54;
+                border: 1px solid #F95412;
+                padding: 0 20px;
+                height: 20px;
+            }
+        }
+    }
+}
