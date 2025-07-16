@@ -83,3 +83,62 @@ header {
         }
     }
 }
+/* 5 CHấu hình nội dung chính */
+main {
+    .khu-vuc-banner {
+        margin-top: 10px;
+    }
+    .khu-vuc-tin-tuc {
+        h2 {
+            color:#F95412;
+            font-size: xx-large;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .danh-sach-tin-tuc {
+            display: flex;
+            /* để các phần tử con có chiều cao bằng nhau */
+            align-items: stretch;
+            margin-top: 22px;
+
+            .tin-tuc {
+                width: calc((100% - 56px)/3);
+                margin-right: 28px;
+                padding: 15px 25px;
+                border: 1px solid #F95412;
+                /* Bor margin-right với phần tử tin-tuc cuối */
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #F95412;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    h1 {
+                        font-size: large;
+                    }
+                }
+
+                .khu-vuc-img {
+                    margin-top: 10px;
+                    overflow: hidden;
+
+                    img {
+                        /* Hiệu ứng diễn ra trong vòng 3s */
+                        transition-duration: 3s;
+                        &:hover{
+                            /* Phóng to ảnh 1.5 lần */
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
