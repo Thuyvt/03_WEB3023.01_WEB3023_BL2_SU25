@@ -138,7 +138,56 @@ main {
                         }
                     }
                 }
+
+                .khu-vuc-img-2 {
+                    margin: 10px 0;
+                    overflow: hidden;
+                    img {
+                        transition-duration: 2s;
+                        &:hover {
+                            /* Hiệu ứng xoay ảnh */
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                /* tốc độ diễn ra hiệu ứng 
+                    easy: mặc định, bắt đầu và kết thức chậm, sau đó nhanh
+                    linear: tốc độ không đổi
+                    ease-in: bắt đầu chậm
+                    ease-out: kết thúc chậm
+                    easy-in-out: bd và kt chậm, ở giữa bình thường
+                    infinite: không đổi, lặp lại liên tục
+                */
+                .khu-vuc-img-3 {
+                    img {
+                        &:hover {
+                            position: relative;
+                            animation: moveing3 3s ease
+                        }
+                    }
+                }
+                .khu-vuc-img-4 {
+                    img {
+                        &:hover {
+                            position: relative;
+                            animation: moveing4 2s infinite;
+                        }
+                    }
+                }
             }
         }
     }
+}
+/* Chuyển động đơn giản 2 trạng thái */
+@keyframes moveing3 {
+    from {top: 50px;}
+    to {top: 0px;}
+}
+/* Chuyển động phức tạp theo tiến trình */
+@keyframes moveing4 {
+    0%  {left: 50px;}
+    25% {left: 40px; border: 2px solid green;}
+    50% {left: 20px; border: 2px solid red;}
+    75% {left: 10px; border: 2px solid black;}
+    100% {left: 0;}
 }
