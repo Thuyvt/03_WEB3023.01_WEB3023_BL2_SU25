@@ -32,7 +32,7 @@
                     <svg height="100" width="200">
                         <rect x="2" y="6" width="130" height="70" rx="10" ry="10" fill="lightgray" stroke="black" stroke-width="2"> 
                         </rect>
-                        
+
                     </svg>
                 </a>
             </div>
@@ -56,9 +56,16 @@
                 </section>
                 <!-- 1.2.3 Khu vực bên phải -->
                 <section class="menu-right">
+                    <!-- Để validate bằng HTML, đưa input và button vào trong thẻ form -->
                     <form action="">
+                        <!-- Muốn validate input theo yêu cầu gì thì thêm attribute tương ứng 
+                         require: bắt buộc nhập
+                         type="remail": yêu cầu nhập email
+                         type="number": yêu cầu nhập sô -->
                         <input type="text" placeholder="Nhập thông tin" required>
-                        <button>TÌM KIẾM</button>
+                        <!-- <input type="email" required> -->
+                        <!-- <input type="number" required max="100" min="10"> -->
+                        <button type="sumit">TÌM KIẾM</button>
                     </form>
                 </section>
             </nav>
